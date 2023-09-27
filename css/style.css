@@ -1,0 +1,75 @@
+:root {
+  --background: red;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  /* border: 1px solid red; */
+}
+body {
+  background-image: url(/assets/body/background-img.jpg);
+  background-position: top;
+  background-repeat: repeat;
+  background-size: 14rem;
+  /* background-color: #260f0f; */
+}
+/*  ================== HEADER ==================*/
+
+header {
+  /* background: var(--secondary); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  /* background-color: red; */
+  background: linear-gradient(
+    to bottom,
+    rgba(248, 197, 27, 0.445),
+    rgba(99, 77, 6, 0)
+  );
+}
+
+.logo {
+  height: 50%;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 10rem;
+}
+
+.navbar-list {
+  gap: 30px;
+}
+
+.navbar-list a {
+  color: var(--text-gray);
+  font-size: var(--font-sm);
+}
+
+.font a {
+  font-weight: var(--font-semibold);
+  color: var(--text-white);
+}
+.navbar-list li:first-child > a {
+  font-weight: var(--font-semibold);
+  color: var(--text-white);
+}
+
+.cart-icon {
+  height: 20px;
+  cursor: pointer;
+}
