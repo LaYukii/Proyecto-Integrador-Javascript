@@ -14,18 +14,18 @@
         class="logo"
       />
       <nav class="navbar">
-        <ul class="navbar-list">
+        <ul class="navbar__list">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#catalog">Catalog</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <label for="cart-toggle" class="cart-label">
+        <label for="cart-toggle" class="navbar__cart-label">
           <img
             src="./assets/navbar/shopping-cart-icon.png"
             alt="carrito de compras"
-            class="cart-icon"
+            class="navbar__cart-label--cart-icon"
           />
         </label>
       </nav>
@@ -33,7 +33,7 @@
     <main>
       <!-- HERO -->
       <section id="hero">
-        <div class="hero-info">
+        <div class="hero__info">
           <h2>Games starring cats!</h2>
           <p>
             We all love cats, am I right?, and we all love games too, am I
@@ -41,15 +41,15 @@
             of all genres and for everyone, let's check out these games about
             cute cats doing cat things and some other non-cat things.
           </p>
-          <a href="#" class="btn">Catalog</a>
+          <a href="#catalog" class="hero__btn btn">Catalog</a>
         </div>
-        <div class="hero-img">
+        <div class="hero__img">
           <img src="./assets/hero/hero-img.webp" alt="cat kawaii" />
         </div>
       </section>
       <!-- ABOUT -->
       <section id="about">
-        <div class="about-info">
+        <div class="about__info">
           <h2>What's this page about?</h2>
           <p>
             This is a personal page dedicated only to One Piece, as a fan of
@@ -61,116 +61,238 @@
             all are correct, different, and independently enjoyable. Welcome
             nakama* to the longest pirate adventure in history!
           </p>
+          <div class="about__btn">
+            <a href="#" class="btn">Mailing List</a
+            ><a href="#" class="btn">Sign In</a>
+          </div>
         </div>
       </section>
       <!-- CATALOG -->
       <section id="catalog">
         <h2>Catalog of our selected games</h2>
-        <div class="catalog-games">
-          <div class="catalog-img">
+        <div class="catalog__games">
+          <div class="catalog__img">
             <img
               src="./assets/cards/card01.jpg"
               alt="Neko Odyssey cover page"
             />
           </div>
-          <div class="catalog-info">
+          <div class="catalog__info">
             <h3>Neko Odyssey</h3>
-            <p><span>Genres:</span> Casual Adventure</p>
+            <p><span>Genres:</span> Casual Adventure.</p>
             <p>
               A Game for Cat Lovers You Can't Miss! Here's a slightly unusual
               Casual Adventure game where the main gameplay centers around
               taking pictures of cats. The pixel art graphics in a 3D setting
               create a charming atmosphere reminiscent of Japanese animation.
             </p>
-            <div class="catalog-price">
+            <div class="catalog__price">
               <span>$40</span>
               <a href="">Buy</a>
             </div>
           </div>
         </div>
-        <div class="catalog-games">
-          <div class="catalog-img">
+        <div class="catalog__games">
+          <div class="catalog__img">
             <img
               src="./assets/cards/card02.jpg"
               alt="Neko Odyssey cover page"
             />
           </div>
-          <div class="catalog-info">
-            <h3>Neko Odyssey</h3>
-            <p><span>Genres:</span> Casual Adventure</p>
+          <div class="catalog__info">
+            <h3>Zodiacats</h3>
+            <p><span>Genres:</span> Puzzle, Solitaire.</p>
             <p>
-              A Game for Cat Lovers You Can't Miss! Here's a slightly unusual
-              Casual Adventure game where the main gameplay centers around
-              taking pictures of cats. The pixel art graphics in a 3D setting
-              create a charming atmosphere reminiscent of Japanese animation.
+              Follow cat Catherine on her journey for the lost astrology papyri
+              and learn more about her job as a witch assistant for bringing
+              good vibes into this Earth! Let Catherine guide you through the
+              zodiac wheel, showing you about features of each solar sign. You
+              can also learn about your cat's sign!
             </p>
-            <div class="catalog-price">
+            <div class="catalog__price">
               <span>$40</span>
               <a href="">Buy</a>
             </div>
           </div>
         </div>
-        <div class="catalog-games">
-          <div class="catalog-img">
+        <div class="catalog__games">
+          <div class="catalog__img">
             <img
               src="./assets/cards/card03.jpg"
               alt="Neko Odyssey cover page"
             />
           </div>
-          <div class="catalog-info">
-            <h3>Neko Odyssey</h3>
-            <p><span>Genres:</span> Casual Adventure</p>
+          <div class="catalog__info">
+            <h3>Catizens</h3>
+            <p><span>Genres:</span> City Builder.</p>
             <p>
-              A Game for Cat Lovers You Can't Miss! Here's a slightly unusual
-              Casual Adventure game where the main gameplay centers around
-              taking pictures of cats. The pixel art graphics in a 3D setting
-              create a charming atmosphere reminiscent of Japanese animation.
+              Catizens is a colony management simulation game where you watch
+              over unique cats with quirky personalities, as you help them build
+              and grow their settlement while exploring new lands, facing off
+              against wildlife and overcoming the challenges of each
+              environment.
             </p>
-            <div class="catalog-price">
+            <div class="catalog__price">
               <span>$40</span>
               <a href="">Buy</a>
             </div>
           </div>
         </div>
-        <div class="catalog-games">
-          <div class="catalog-img">
+        <div class="catalog__games">
+          <div class="catalog__img">
             <img
               src="./assets/cards/card04.jpg"
               alt="Neko Odyssey cover page"
             />
           </div>
-          <div class="catalog-info">
-            <h3>Neko Odyssey</h3>
-            <p><span>Genres:</span> Casual Adventure</p>
+          <div class="catalog__info">
+            <h3>Everdeep Aurora</h3>
+            <p><span>Genres:</span> Puzzle Plarformer.</p>
             <p>
-              A Game for Cat Lovers You Can't Miss! Here's a slightly unusual
-              Casual Adventure game where the main gameplay centers around
-              taking pictures of cats. The pixel art graphics in a 3D setting
-              create a charming atmosphere reminiscent of Japanese animation.
+              An ongoing apocalyptic meteor shower has forced the world’s
+              population to settle underground. As Shell, a feline child who
+              awakens to find her mother missing, drill downward from the
+              surface layer through a tile-based underground and discover the
+              Everdeep.
             </p>
-            <div class="catalog-price">
+            <div class="catalog__price">
               <span>$40</span>
               <a href="">Buy</a>
             </div>
           </div>
         </div>
-        <div class="catalog-games">
-          <div class="catalog-img">
+        <div class="catalog__games">
+          <div class="catalog__img">
             <img
               src="./assets/cards/card05.jpg"
               alt="Neko Odyssey cover page"
             />
           </div>
-          <div class="catalog-info">
-            <h3>Neko Odyssey</h3>
-            <p><span>Genres:</span> Casual Adventure</p>
+          <div class="catalog__info">
+            <h3>Quilts and Cats of Calico</h3>
+            <p><span>Genres:</span> Board game, Strategy.</p>
             <p>
-              A Game for Cat Lovers You Can't Miss! Here's a slightly unusual
-              Casual Adventure game where the main gameplay centers around
-              taking pictures of cats. The pixel art graphics in a 3D setting
-              create a charming atmosphere reminiscent of Japanese animation.
+              Quilts & Cats of Calico is a wholesome, award-winning complex
+              puzzle game for 1 to 4 players. Meet adorable cats and sew the
+              coziest quilts. Compete with other players in multiplayer mode,
+              play solo, or delve into the story of a quilter sewing their way
+              through the city of cats.
             </p>
-            <div class="catalog-price">
+            <div class="catalog__price">
+              <span>$40</span>
+              <a href="">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__games">
+          <div class="catalog__img">
+            <img
+              src="./assets/cards/card06.jpg"
+              alt="Neko Odyssey cover page"
+            />
+          </div>
+          <div class="catalog__info">
+            <h3>Cat Quest</h3>
+            <p><span>Genres:</span> RPG, Adventure, Open World.</p>
+            <p>
+              The multi award-winning Action RPG. Some say 'Diablo with Cats'
+              others a 'Super-cute Skyrim', whatever your take, Cat Quest's
+              loot-fuelled cat-venture is as beautifully crafted, as its combat
+              and magic are ultra-satisfying. Universally adored by critics -
+              it'll have you purring for joy!
+            </p>
+            <div class="catalog__price">
+              <span>$40</span>
+              <a href="">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__games">
+          <div class="catalog__img">
+            <img
+              src="./assets/cards/card07.jpg"
+              alt="Neko Odyssey cover page"
+            />
+          </div>
+          <div class="catalog__info">
+            <h3>Flying Neko Delivery</h3>
+            <p><span>Genres:</span> Open world, Exploration, Flight</p>
+            <p>
+              Take on the role of Onigiri, a feline witch who lives in a cottage
+              and delivers packages flying on a broomstick. Customize your
+              cottage, explore new worlds, forage plants and fungi, and meet
+              quirky villagers along the way, while enjoying music by Mark
+              Sparling, the composer for A Short Hike.
+            </p>
+            <div class="catalog__price">
+              <span>$40</span>
+              <a href="">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__games">
+          <div class="catalog__img">
+            <img
+              src="./assets/cards/card08.jpg"
+              alt="Neko Odyssey cover page"
+            />
+          </div>
+          <div class="catalog__info">
+            <h3>Snacko</h3>
+            <p><span>Genres:</span> Adventure, Farming Sim.</p>
+            <p>
+              Lift a curse and revitalize a ruined island in Snacko, where
+              former big city kitties Momo and Mikan are starting a new life!
+              Grow crops, raise fluffy cows, go fishing, exploring, customize
+              and decorate as you please, and much, much more in this farming
+              cat-venture.
+            </p>
+            <div class="catalog__price">
+              <span>$40</span>
+              <a href="">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__games">
+          <div class="catalog__img">
+            <img
+              src="./assets/cards/card09.jpg"
+              alt="Neko Odyssey cover page"
+            />
+          </div>
+          <div class="catalog__info">
+            <h3>Little Kitty, Big City</h3>
+            <p><span>Genres:</span> Adventure, Exploration.</p>
+            <p>
+              You're a curious little kitty with a big personality, on an
+              adventure to find your way back home. Explore the city, make new
+              friends with stray animals, wear delightful hats, and leave more
+              than a little chaos in your wake. After all, isn't that what cats
+              do best?
+            </p>
+            <div class="catalog__price">
+              <span>$40</span>
+              <a href="">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__games">
+          <div class="catalog__img">
+            <img
+              src="./assets/cards/card10.jpg"
+              alt="Neko Odyssey cover page"
+            />
+          </div>
+          <div class="catalog__info">
+            <h3>Cats Organized Neatly</h3>
+            <p><span>Genres:</span> Puzzle, Minimalist.</p>
+            <p>
+              In this 2D puzzle game you have the responsibility to arrange your
+              feline friends in a way that fits the grid. Cats Organized Neatly
+              comes with 80 different handcrafted levels and a whole bunch of
+              cats in all shapes and sizes.
+            </p>
+            <div class="catalog__price">
               <span>$40</span>
               <a href="">Buy</a>
             </div>

@@ -64,7 +64,7 @@ header {
 }
 
 .navbar,
-.navbar-list {
+.navbar__list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,11 +77,11 @@ header {
   gap: 10rem;
 }
 
-.navbar-list {
+.navbar__list {
   gap: 30px;
 }
 
-.navbar-list a {
+.navbar__list a {
   color: black;
   /* font-size: var(--font-sm); */
 }
@@ -91,7 +91,7 @@ header {
   color: var(--text-white);
 } */
 
-.cart-icon {
+.navbar__cart-label--cart-icon {
   height: 20px;
   cursor: pointer;
 }
@@ -114,7 +114,7 @@ header {
   border-radius: 170px;
 }
 
-.hero-info {
+.hero__info {
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
@@ -125,6 +125,15 @@ header {
   padding: 0px 30px;
 }
 
+/* .hero__btn {
+  font-size: var(--font-petite);
+  color: black;
+  background-color: rgb(167, 134, 197);
+  padding: 8px 30px;
+  border-radius: 30px;
+  font-family: var(--family-main);
+} */
+
 .btn {
   font-size: var(--font-petite);
   color: black;
@@ -134,17 +143,17 @@ header {
   font-family: var(--family-main);
 }
 
-.hero-info h2 {
+.hero__info h2 {
   font-size: var(--font-title);
   font-family: var(--family-title);
 }
 
-.hero-info p {
+.hero__info p {
   font-size: var(--font-petite);
   font-family: var(--family-main);
 }
 
-.hero-img {
+.hero__img {
   /* border: 1px solid rgb(196, 228, 13); */
   padding: 5px;
   display: flex;
@@ -160,20 +169,30 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 0px;
+  padding: 90px 0px;
 }
 
-.about-info h2 {
+.about__info h2 {
   font-family: var(--family-title);
   font-size: var(--font-title);
   padding-bottom: 25px;
 }
-.about-info {
+.about__info {
   font-size: var(--font-petite);
   font-family: var(--family-main);
   /* border: 2px solid violet; */
   width: 80%;
   text-align: center;
+  gap: 20px;
+}
+
+.about__btn {
+  /* border: 1000x solid blue; */
+  /* background-color: #a21f09; */
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px 0px;
 }
 
 /*  ================== CATALOG ==================*/
@@ -183,9 +202,11 @@ header {
   display: flex;
   justify-content: center;
   /* margin-top: 20px; */
+  padding-top: 30px;
+  /* border: 2px solid violet; */
 }
 
-.catalog-games {
+.catalog__games {
   /* border: 1px solid red; */
   max-width: 1200px;
   display: flex;
@@ -202,12 +223,12 @@ header {
   gap: 10px;
 }
 
-/* .catalog-img {
+/* .catalog__img {
   height: fit-content;
   width: 100%;
 } */
 
-.catalog-info {
+.catalog__info {
   /* border: 1px solid blue; */
   display: flex;
   justify-content: flex-start;
@@ -217,12 +238,12 @@ header {
   font-family: var(--family-main);
 }
 
-.catalog-info h3 {
+.catalog__info h3 {
   font-size: var(--font-medium);
   font-family: var(--family-title);
 }
 
-.catalog-price {
+.catalog__price {
   /* border: 1px solid blue; */
   max-width: 1000000px;
   display: flex;
@@ -230,7 +251,7 @@ header {
   justify-content: space-between;
 }
 
-.catalog-price a {
+.catalog__price a {
   /* border: 1px solid blue; */
   border-radius: 50px;
   color: black;
