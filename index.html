@@ -5,20 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Integrador</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
   </head>
   <body>
     <header>
       <img
         src="./assets/navbar/Cute-Cat-Kawaii-Logo-52461700-1-removebg-preview (3).png"
-        alt="Logo de NucbaNFT"
+        alt="Cute cat logo"
         class="logo"
       />
       <nav class="navbar">
         <ul class="navbar__list">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#catalog">Catalog</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero" class="navbar__items">Home</a></li>
+          <li><a href="#about" class="navbar__items">About</a></li>
+          <li><a href="#catalog" class="navbar__items">Catalog</a></li>
+          <li><a href="#contact" class="navbar__items">Contact</a></li>
+        </ul>
+        <ul class="navbar__list">
+          <li>
+            <a href="#" class="navbar__items--colored">Login</a>
+          </li>
+          <li>
+            <a href="#" class="navbar__items--colored">Sign Up</a>
+          </li>
         </ul>
 
         <label for="cart-toggle" class="navbar__cart-label">
@@ -44,7 +70,7 @@
           <a href="#catalog" class="hero__btn btn">Catalog</a>
         </div>
         <div class="hero__img">
-          <img src="./assets/hero/hero-img.webp" alt="cat kawaii" />
+          <img src="./assets/hero/cat-gaming03.jpg" alt="gaming cat" />
         </div>
       </section>
       <!-- ABOUT -->
@@ -52,19 +78,14 @@
         <div class="about__info">
           <h2>What's this page about?</h2>
           <p>
-            This is a personal page dedicated only to One Piece, as a fan of
-            this work, I want to collect all the information and make it more
-            attractive to new people who want to discover this story, as it can
-            be overwhelming due to the years that the manga has been in
-            development, the anime is still on air, and recently began the live
-            action on netflix, there are many ways to discover this world, and
-            all are correct, different, and independently enjoyable. Welcome
-            nakama* to the longest pirate adventure in history!
+            This page is a small store of games starring cats, I have manually
+            made my own personal list based on my tastes, from many genres, and
+            filtered to be cute and wholesome games, below you can create an
+            account so you can track the progress of your games in your account.
+            Also when you register you can subscribe to the newsletter to
+            receive news about when I add other games to the list and other
+            updates.
           </p>
-          <div class="about__btn">
-            <a href="#" class="btn">Mailing List</a
-            ><a href="#" class="btn">Sign In</a>
-          </div>
         </div>
       </section>
       <!-- CATALOG -->
@@ -88,16 +109,13 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
         <div class="catalog__games">
           <div class="catalog__img">
-            <img
-              src="./assets/cards/card02.jpg"
-              alt="Neko Odyssey cover page"
-            />
+            <img src="./assets/cards/card02.jpg" alt="Zodiacats cover page" />
           </div>
           <div class="catalog__info">
             <h3>Zodiacats</h3>
@@ -111,16 +129,13 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
         <div class="catalog__games">
           <div class="catalog__img">
-            <img
-              src="./assets/cards/card03.jpg"
-              alt="Neko Odyssey cover page"
-            />
+            <img src="./assets/cards/card03.jpg" alt="Catizens cover page" />
           </div>
           <div class="catalog__info">
             <h3>Catizens</h3>
@@ -134,7 +149,7 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
@@ -142,7 +157,7 @@
           <div class="catalog__img">
             <img
               src="./assets/cards/card04.jpg"
-              alt="Neko Odyssey cover page"
+              alt="Everdeep Aurora cover page"
             />
           </div>
           <div class="catalog__info">
@@ -157,7 +172,7 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
@@ -165,7 +180,7 @@
           <div class="catalog__img">
             <img
               src="./assets/cards/card05.jpg"
-              alt="Neko Odyssey cover page"
+              alt="Quilts and Cats of Calico cover page"
             />
           </div>
           <div class="catalog__info">
@@ -180,16 +195,13 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
         <div class="catalog__games">
           <div class="catalog__img">
-            <img
-              src="./assets/cards/card06.jpg"
-              alt="Neko Odyssey cover page"
-            />
+            <img src="./assets/cards/card06.jpg" alt="Cat Quest cover page" />
           </div>
           <div class="catalog__info">
             <h3>Cat Quest</h3>
@@ -203,7 +215,7 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
@@ -211,7 +223,7 @@
           <div class="catalog__img">
             <img
               src="./assets/cards/card07.jpg"
-              alt="Neko Odyssey cover page"
+              alt="Flying Neko Delivery cover page"
             />
           </div>
           <div class="catalog__info">
@@ -226,16 +238,13 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
         <div class="catalog__games">
           <div class="catalog__img">
-            <img
-              src="./assets/cards/card08.jpg"
-              alt="Neko Odyssey cover page"
-            />
+            <img src="./assets/cards/card08.jpg" alt="Snacko cover page" />
           </div>
           <div class="catalog__info">
             <h3>Snacko</h3>
@@ -249,7 +258,7 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
@@ -257,7 +266,8 @@
           <div class="catalog__img">
             <img
               src="./assets/cards/card09.jpg"
-              alt="Neko Odyssey cover page"
+              alt="Little Kitty, Big City
+              cover page"
             />
           </div>
           <div class="catalog__info">
@@ -272,7 +282,7 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
@@ -280,7 +290,8 @@
           <div class="catalog__img">
             <img
               src="./assets/cards/card10.jpg"
-              alt="Neko Odyssey cover page"
+              alt="Cats Organized Neatly
+              cover page"
             />
           </div>
           <div class="catalog__info">
@@ -294,12 +305,63 @@
             </p>
             <div class="catalog__price">
               <span>$40</span>
-              <a href="">Buy</a>
+              <button class="catalog__btn">Buy</button>
             </div>
           </div>
         </div>
       </section>
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="contact__info">
+          <h2>Contact</h2>
+          <div class="contact__info--name">
+            <p>Loza, Yukii Sasha</p>
+          </div>
+          <div class="contact__data">
+            <div>
+              <p>
+                <img src="./img/iconos contacto/mail.svg" alt="" />
+                yukiiloza01@gmail.com
+              </p>
+              <p>
+                <img src="./img/iconos contacto/phone.svg" alt="" /> +54 3865
+                21-0915
+              </p>
+            </div>
+          </div>
+          <div class="contact__social">
+            <a href="">
+              <img
+                src="./assets/contact/twitter-round-icon.png"
+                alt="twitter logo"
+              /> </a
+            ><a href="">
+              <img
+                src="./assets/contact/instagram-round-icon.png"
+                alt="instagram logo"
+              />
+            </a>
+            <a href="">
+              <img
+                src="./assets/contact/youtube-round-icon.png"
+                alt="youtube logo"
+            /></a>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28350.82957518921!2d-65.6171435829414!3d-27.349042070063582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9423cf69e0741b53%3A0x279bb290ca486cb!2zQ29uY2VwY2nDs24sIFR1Y3Vtw6Fu!5e0!3m2!1ses-419!2sar!4v1695225458025!5m2!1ses-419!2sar"
+          width="500"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <img src="./assets/footer/footer-img.gif" alt="" />
+      <p>Made by cat lover, Yukii Loza 😺</p>
+    </footer>
   </body>
 </html>
