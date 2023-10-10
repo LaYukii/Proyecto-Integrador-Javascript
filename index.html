@@ -46,14 +46,85 @@
             <a href="#" class="navbar__items--colored">Sign Up</a>
           </li>
         </ul>
-
-        <label for="cart-toggle" class="navbar__cart-label">
+        <!-- CART-TOGGLE -->
+        <label for="cart-toggle" class="navbar__cart-toggle">
           <img
             src="./assets/navbar/shopping-cart-icon.png"
             alt="carrito de compras"
-            class="navbar__cart-label--cart-icon"
+            class="navbar__cart-toggle--cart-icon"
           />
         </label>
+        <input type="checkbox" id="cart-toggle" />
+        <!-- CART -->
+        <div class="cart">
+          <h2>Tu carrito</h2>
+          <!-- PRODUCTS -->
+          <div class="cart__items">
+            <img
+              src="./assets/cart/cart-item01.jpg"
+              alt="zodiacats cover page"
+            />
+
+            <div class="cart__info">
+              <p>Zodiacats</p>
+              <span>Delete</span>
+            </div>
+            <div class="cart__info--price">
+              <p>$40</p>
+            </div>
+          </div>
+          <div class="cart__items">
+            <img
+              src="./assets/cart/cart-item02.jpg"
+              alt="zodiacats cover page"
+            />
+
+            <div class="cart__info">
+              <p>Cat Quest</p>
+              <span>Delete</span>
+            </div>
+            <div class="cart__info--price">
+              <p>$40</p>
+            </div>
+          </div>
+          <div class="cart__items">
+            <img
+              src="./assets/cart/cart-item03.jpg"
+              alt="zodiacats cover page"
+            />
+
+            <div class="cart__info">
+              <p>Flying Neko Delivery</p>
+              <span>Delete</span>
+            </div>
+            <div class="cart__info--price">
+              <p>$40</p>
+            </div>
+          </div>
+          <div class="cart__items">
+            <img
+              src="./assets/cart/cart-item04.jpg"
+              alt="zodiacats cover page"
+            />
+
+            <div class="cart__info">
+              <p>Cats Organized Neatly</p>
+              <span>Delete</span>
+            </div>
+            <div class="cart__info--price">
+              <p>$40</p>
+            </div>
+          </div>
+
+          <span class="divider"></span>
+          <!-- TOTAL AND BOTTON  -->
+
+          <div class="cart__total">
+            <p>Total:</p>
+            <span>$120</span>
+          </div>
+          <button class="cart__total--button">Buy</button>
+        </div>
       </nav>
     </header>
     <main>
