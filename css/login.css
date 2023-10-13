@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  /* border: 1px solid red; */
+}
+body {
+  background-image: url(/assets/body/background-cat07.jpg);
+  background-position: top;
+  background-repeat: repeat;
+  background-size: 19rem;
+  /* width: 100%; */
+  /* background-color: #260f0f; */
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid rgb(0, 26, 255); */
+}
