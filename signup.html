@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <title>Sign Up</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img src="./assets/navbar/arrow-left@3x.png" alt="arrow-left"
+      /></a>
+    </header>
+    <main>
+      <!-- SIGNUP -->
+      <section id="signup">
+        <div class="signup__container">
+          <h2>Create an account</h2>
+          <form class="signup__info">
+            <label for="name">
+              Name:
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+            /></label>
+            <label for="age"
+              >Age:
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="22"
+                required
+            /></label>
+            <label for="username">
+              Username:
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username"
+                required
+              />
+            </label>
+            <label for="email">
+              Email:
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Name@gmail.com"
+                required
+              />
+            </label>
+            <label for="password">
+              Password:
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+            /></label>
+            <label for="newslatter" class="newslatter">
+              <input type="checkbox" name="newslatter" id="newslatter" />
+              Subscribe to newslatter.
+            </label>
+            <button class="signup__button">Create</button>
+            <a class="signup__login" href="./login.html">I have an account</a>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

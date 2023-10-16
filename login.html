@@ -25,8 +25,47 @@
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <a href="./index.html">
+        <img src="./assets/navbar/arrow-left@3x.png" alt="arrow-left"
+      /></a>
+    </header>
+    <main>
+      <!-- LOGIN -->
+      <section id="login">
+        <div class="login__container">
+          <h2>Login to your account</h2>
+          <form class="login__info">
+            <label for="username">
+              Enter your username:
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username"
+                required
+            /></label>
+            <label for="password">
+              Enter your password:
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+            /></label>
+            <label for="remember" class="remember">
+              <input type="checkbox" name="remember" id="remember" />
+              Keep the session logged in
+            </label>
+            <button class="login__button">Log in</button>
+            <a class="login__signup" href="./signup.html"
+              >I am not registered.</a
+            >
+          </form>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
