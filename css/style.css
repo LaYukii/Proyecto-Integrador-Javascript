@@ -118,7 +118,7 @@ header {
   right: 0px;
   background: rgba(243, 174, 186, 0.822);
   border: 1px solid black;
-  height: calc(65vh - 105px);
+  /* height: calc(65vh - 105px); */
   /* height: 100vh; */
   display: flex;
   flex-direction: column;
@@ -381,7 +381,7 @@ header {
   justify-content: space-between;
 }
 
-.catalog__btn {
+.catalog__price--btn {
   /* border: 1px solid blue; */
   font-size: var(--font-btn);
   font-family: var(--family-main);

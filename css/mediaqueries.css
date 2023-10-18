@@ -1,0 +1,42 @@
+/* Portatil */
+@media (max-width: 1024px) {
+  /*  ================== HEADER ==================*/
+
+  body {
+    max-width: 1024px;
+  }
+
+  /* * {
+    border: 1px solid red;
+  } */
+  header {
+    /* width: 100%;  */
+    max-width: 1024px;
+    height: 65px;
+    /* border: 1px solid red; */
+  }
+
+  /*  ================== CATALOG ==================*/
+  #catalog {
+    /* border: 1px solid red; */
+    max-width: 1024px;
+  }
+
+  .catalog__games {
+    /* border: 1px solid red; */
+    padding: 30px 25px;
+  }
+
+  /*  ================== CONTACT ==================*/
+  #contact {
+    max-width: 1024px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+}
+
+/* Celu */
+@media (max-width: 578px) {
+}
