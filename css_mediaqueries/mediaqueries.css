@@ -1,0 +1,226 @@
+/* Portatil */
+@media (max-width: 1024px) {
+  /*  ================== HEADER ==================*/
+
+  body {
+    max-width: 1024px;
+  }
+
+  /* * {
+    border: 1px solid red;
+  } */
+  header {
+    width: 100%;
+    /* max-width: 1024px; */
+    height: 65px;
+    /* border: 1px solid red; */
+  }
+
+  /*  ================== CATALOG ==================*/
+  #catalog {
+    /* border: 1px solid red; */
+    max-width: 1024px;
+  }
+
+  .catalog__games {
+    /* border: 1px solid red; */
+    padding: 30px 25px;
+  }
+
+  /*  ================== CONTACT ==================*/
+  #contact {
+    max-width: 1024px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  /* * {
+    border: 1px solid red;
+  } */
+  /*  ================== HEADER ==================*/
+  .header__menu {
+    /* border: 2px solid blue; */
+    display: flex;
+    order: 2;
+  }
+
+  .header__menu img {
+    /* border: 2px solid blue; */
+    height: 25px;
+    padding-right: 5px;
+  }
+
+  .navbar__list {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: var(--golden); */
+    /* background-color: rgba(243, 174, 186, 0.822); */
+    background: linear-gradient(
+      to top,
+      rgba(243, 174, 186, 0.89),
+      rgba(141, 72, 150, 0.137)
+    );
+    border: 1px solid black;
+    border-top: 0;
+    padding: 45px 30px;
+    border-radius: 0 0 15px 15px;
+    display: none;
+  }
+  #menu-toggle:checked ~ .navbar__list {
+    display: flex;
+  }
+
+  .navbar__items {
+    background-color: pink;
+    border: 2px solid black;
+    padding: 10px 80px;
+    border-radius: 90px;
+  }
+
+  .navbar__items--colored {
+    background-color: rgb(173, 126, 228);
+    border: 2px solid black;
+    padding: 10px 80px;
+    border-radius: 90px;
+  }
+
+  header {
+    width: 100%;
+    /* max-width: 768px; */
+    height: 65px;
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  /*  ================== CATALOG ==================*/
+  #catalog {
+    /* border: 1px solid red; */
+    max-width: 600px;
+  }
+
+  .catalog__games {
+    /* max-width: 600px; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  /*  ================== CONTACT ==================*/
+  #contact {
+    /* border: 1px solid red; */
+    max-width: 690px;
+  }
+}
+
+/* Celu */
+@media (max-width: 578px) {
+  /*  ================== HEADER ==================*/
+  header {
+    width: 100%;
+    /* max-width: 425px; */
+    height: 55px;
+    /* border: 1px solid red; */
+  }
+  .logo {
+    /* border: 2px solid blue; */
+    height: auto;
+    width: 35px;
+  }
+
+  /* .navbar__cart-toggle--cart-icon {height: auto;
+    width: 35px;
+  } */
+
+  /* .header__menu img {
+    height: auto;
+    width: 30px;
+  } */
+
+  /*  ================== HERO ==================*/
+  /* * {
+    border: 1px solid red;
+  } */
+
+  #hero {
+    /* border: 1px solid red; */
+    /* max-width: 400px; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hero h2 {
+    text-align: center;
+  }
+
+  .hero__info {
+    /* border: 1px solid red; */
+    width: 400px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  /*  ================== CATALOG ==================*/
+
+  #catalog {
+    /* border: 1px solid red; */
+    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .catalog__games {
+    /* border: 1px solid red; */
+    max-width: 400px;
+    padding: 60px 5px;
+    margin: 50px 0px;
+  }
+
+  .catalog__img img {
+    /* max-width: 400px; */
+    /* height: fit-content; */
+    /* width: 10px;
+      height: auto; */
+    /* border: 1px solid red; */
+    height: auto;
+    width: 350px;
+  }
+
+  /*  ================== CONTACT ==================*/
+  #contact {
+    /* border: 1px solid red; */
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    align-content: center; */
+    /* text-align: center; */
+    flex-wrap: wrap;
+  }
+
+  .contact__info {
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    width: 100%;
+    align-items: center;
+    /* align-content: center; */
+  }
+
+  iframe {
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 300px;
+  }
+}

@@ -42,6 +42,11 @@ main {
 }
 /*  ================== HEADER ==================*/
 
+#menu-toggle,
+.header__menu {
+  display: none;
+}
+
 header {
   /* background: var(--secondary); */
   display: flex;
@@ -116,13 +121,19 @@ header {
   position: absolute;
   top: 65px;
   right: 0px;
-  background: rgba(243, 174, 186, 0.822);
+  /* background: rgba(243, 174, 186, 0.822); */
+  background: linear-gradient(
+    to top,
+    rgba(243, 174, 186, 0.89),
+    rgba(141, 72, 150, 0.137)
+  );
   border: 1px solid black;
   /* height: calc(65vh - 105px); */
   /* height: 100vh; */
   display: flex;
   flex-direction: column;
   display: none;
+  border-top: 0;
 }
 
 .cart h2 {
