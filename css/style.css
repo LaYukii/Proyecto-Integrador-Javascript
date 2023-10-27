@@ -40,6 +40,11 @@ main {
   width: 100%;
   /* border: 1px solid rgb(0, 26, 255); */
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*  ================== HEADER ==================*/
 
 #menu-toggle,
@@ -134,6 +139,7 @@ header {
   flex-direction: column;
   display: none;
   border-top: 0;
+  z-index: 2;
 }
 
 .cart h2 {
@@ -207,6 +213,26 @@ header {
   font-size: var(--font-petite);
   font-family: var(--family-main);
   /* max-width: 150px; */
+}
+
+/*  ================== BLUR ==================*/
+.blurry {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 65px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba rgba(30, 30, 30, 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(7px);
+  display: none;
+  z-index: 1;
+}
+
+#cart-toggle:checked ~ .blurry,
+#menu-toggle:checked ~ .blurry {
+  display: block;
 }
 
 /*  ================== HERO ==================*/

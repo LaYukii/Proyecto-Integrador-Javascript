@@ -59,8 +59,7 @@
     right: 0%;
     flex-direction: column;
     align-items: center;
-    /* background-color: var(--golden); */
-    /* background-color: rgba(243, 174, 186, 0.822); */
+
     background: linear-gradient(
       to top,
       rgba(243, 174, 186, 0.89),
@@ -74,6 +73,7 @@
   }
   #menu-toggle:checked ~ .navbar__list {
     display: flex;
+    z-index: 2;
   }
 
   .navbar__items {
@@ -95,7 +95,7 @@
     /* max-width: 768px; */
     height: 65px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   /*  ================== CATALOG ==================*/
@@ -142,6 +142,46 @@
     height: auto;
     width: 30px;
   } */
+  /*  ================== CART ==================*/
+
+  .cart {
+    top: 55px;
+    border-top: 0;
+
+    width: 100%;
+    /* max-width: 320px; */
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+  .cart h2 {
+    /* border: 1px solid red; */
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cart__items {
+    padding: 5px 5px;
+    margin: 10px 0px;
+  }
+
+  /* .cart__info span,
+  .cart__info--delete,
+  .cart__info p {
+    font-size: 15px;
+  } */
+
+  /*  ================== MENU ==================*/
+  .navbar__list {
+    top: 55px;
+  }
+
+  .navbar__items,
+  .navbar__items--colored {
+    font-size: 15px;
+  }
 
   /*  ================== HERO ==================*/
   /* * {
@@ -222,5 +262,114 @@
     /* border: 1px solid red; */
     width: 300px;
     height: 300px;
+  }
+}
+
+/* Celu Chiquito */
+@media (max-width: 360px) {
+  /* * {
+    border: 1px solid red;
+  } */
+
+  .blurry {
+    top: 55px;
+  }
+
+  /*  ================== HEADER ==================*/
+
+  .logo {
+    /* border: 2px solid blue; */
+    height: auto;
+    width: 30px;
+  }
+
+  .navbar__cart-toggle--cart-icon {
+    height: auto;
+    width: 20px;
+  }
+
+  .header__menu img {
+    height: auto;
+    width: 25px;
+  }
+
+  /*  ================== CART ==================*/
+
+  .cart {
+    max-width: 320px;
+  }
+
+  .cart__info span,
+  .cart__info--delete,
+  .cart__info p {
+    font-size: 15px;
+  }
+
+  /*  ================== MENU ==================*/
+  .navbar__list {
+    top: 55px;
+    /* border: 1px solid red; */
+  }
+
+  .navbar__items {
+    padding: 10px 60px;
+
+    font-size: 15px;
+  }
+
+  .navbar__items--colored {
+    padding: 10px 60px;
+
+    font-size: 15px;
+  }
+
+  /*  ================== HERO ==================*/
+
+  .hero__info {
+    /* border: 1px solid red; */
+    width: 300px;
+  }
+
+  /*  ================== CATALOG ==================*/
+
+  #catalog {
+    /* border: 1px solid red; */
+    max-width: 300px;
+  }
+
+  .catalog__games {
+    /* border: 1px solid rgb(204, 240, 4); */
+    /* max-width: 300px; */
+    padding: 50px 5px;
+    margin: 30px 0px;
+    font-size: 14px;
+  }
+
+  .catalog__img img {
+    /* max-width: 400px; */
+    /* height: fit-content; */
+    /* width: 10px;
+      height: auto; */
+    /* border: 1px solid red; */
+    height: auto;
+    width: 250px;
+  }
+
+  /*  ================== CONTACT ==================*/
+  #contact {
+    /* border: 1px solid red; */
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    align-content: center; */
+    /* text-align: center; */
+    flex-wrap: wrap;
+  }
+
+  iframe {
+    /* border: 1px solid red; */
+    width: 250px;
+    height: 250px;
   }
 }
