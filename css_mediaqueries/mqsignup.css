@@ -1,10 +1,101 @@
+/* Portatil */
+@media (max-width: 1024px) {
+  /*  ================== SIGN UP ==================*/
+  #signup {
+    /* border: 1px solid red; */
+    height: fit-content;
+    margin: 20px;
+  }
+}
+
 /* Tablet */
 @media (max-width: 992px) {
-  /* * {
-    border: 1px solid red;
-  } */
+  /*  ================== SIGN UP ==================*/
+
   #signup {
-    max-width: 768px;
-    height: 100vh;
+    /* border: 1px solid red; */
+    height: fit-content;
+    margin: 20px;
+  }
+}
+
+/* Celu */
+@media (max-width: 578px) {
+  /*  ================== HEADER ==================*/
+  header {
+    height: 55px;
+    /* border: 1px solid red; */
+  }
+  header img {
+    /* border: 2px solid blue; */
+    height: auto;
+    width: 35px;
+  }
+
+  /*  ================== SIGN UP ==================*/
+
+  #signup {
+    /* border: 1px solid red; */
+
+    height: fit-content;
+    margin: 20px;
+  }
+
+  #signup h2 {
+    text-align: center;
+  }
+
+  .signup__container {
+    /* border: 1px solid red; */
+    max-width: 350px;
+  }
+
+  .signup__info {
+    /* border: 1px solid red; */
+    max-width: 300px;
+  }
+
+  .remember {
+    /* border: 1px solid red; */
+    max-width: 300px;
+  }
+}
+/* Celu Chiquito */
+@media (max-width: 360px) {
+  /*  ================== HEADER ==================*/
+
+  header img {
+    /* border: 2px solid blue; */
+    height: auto;
+    width: 30px;
+  }
+
+  /*  ================== SIGN UP ==================*/
+
+  #signup {
+    /* border: 1px solid red; */
+    max-width: 400px;
+    height: fit-content;
+    margin: 20px;
+  }
+
+  #signup h2 {
+    font-size: 35px;
+  }
+
+  .signup__container {
+    /* border: 1px solid red; */
+    max-width: 300px;
+  }
+
+  .signup__info {
+    /* border: 1px solid red; */
+    max-width: 250px;
+    font-size: 15px;
+  }
+
+  .remember {
+    /* border: 1px solid red; */
+    max-width: 250px;
   }
 }

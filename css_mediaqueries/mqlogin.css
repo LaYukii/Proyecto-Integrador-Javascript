@@ -1,0 +1,81 @@
+/* Celu */
+@media (max-width: 578px) {
+  /*  ================== HEADER ==================*/
+  header {
+    height: 55px;
+    /* border: 1px solid red; */
+  }
+  header img {
+    /* border: 2px solid blue; */
+    height: auto;
+    width: 35px;
+  }
+
+  /*  ================== LOG IN ==================*/
+
+  #login {
+    /* border: 1px solid red; */
+
+    height: fit-content;
+    margin: 20px;
+  }
+
+  #login h2 {
+    text-align: center;
+  }
+
+  .login__container {
+    /* border: 1px solid red; */
+    max-width: 350px;
+  }
+
+  .login__info {
+    /* border: 1px solid red; */
+    max-width: 300px;
+  }
+
+  .remember {
+    /* border: 1px solid red; */
+    max-width: 300px;
+  }
+}
+
+/* Celu Chiquito */
+@media (max-width: 360px) {
+  /*  ================== HEADER ==================*/
+
+  header img {
+    /* border: 2px solid blue; */
+    height: auto;
+    width: 30px;
+  }
+
+  /*  ================== LOG IN ==================*/
+
+  #login {
+    /* border: 1px solid red; */
+    max-width: 400px;
+    height: fit-content;
+    margin: 20px;
+  }
+
+  #login h2 {
+    font-size: 35px;
+  }
+
+  .login__container {
+    /* border: 1px solid red; */
+    max-width: 300px;
+  }
+
+  .login__info {
+    /* border: 1px solid red; */
+    max-width: 250px;
+    font-size: 15px;
+  }
+
+  .remember {
+    /* border: 1px solid red; */
+    max-width: 250px;
+  }
+}
