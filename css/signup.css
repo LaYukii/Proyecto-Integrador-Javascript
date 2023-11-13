@@ -69,6 +69,8 @@ header img {
   align-items: center;
   max-width: 1200px;
   height: 90vh;
+  height: fit-content;
+  margin: 20px;
 }
 
 #signup h2 {

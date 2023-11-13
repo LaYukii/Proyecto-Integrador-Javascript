@@ -2,7 +2,7 @@
 @media (max-width: 1024px) {
   /*  ================== SIGN UP ==================*/
   #signup {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     height: fit-content;
     margin: 20px;
   }
