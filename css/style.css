@@ -166,6 +166,10 @@ header {
   border: 1px solid rgba(153, 60, 153, 0.493);
 }
 
+.cart__image {
+  max-width: 120px;
+}
+
 .cart__info {
   display: flex;
   flex-direction: column;
