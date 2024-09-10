@@ -220,7 +220,7 @@ header {
 }
 
 /*  ================== BLUR ==================*/
-.blurry {
+#blurry {
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -234,9 +234,12 @@ header {
   z-index: 1;
 }
 
-#cart-toggle:checked ~ .blurry,
-#menu-toggle:checked ~ .blurry {
+#cart-toggle:checked ~ #blurry {
   display: block;
+}
+
+.blurry {
+  display: block !important;
 }
 
 /*  ================== HERO ==================*/

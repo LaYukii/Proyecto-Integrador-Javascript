@@ -71,9 +71,10 @@
     border-radius: 0 0 15px 15px;
     display: none;
   }
-  #menu-toggle:checked ~ .navbar__list {
-    display: flex;
-    z-index: 2;
+  
+  .navbar__list-visible {
+    display: flex !important;
+    z-index: 2 !important;
   }
 
   .navbar__items {
@@ -271,7 +272,7 @@
     border: 1px solid red;
   } */
 
-  .blurry {
+  #blurry {
     top: 55px;
   }
 

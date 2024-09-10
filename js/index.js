@@ -16,6 +16,7 @@ function init() {
     categoryList.addEventListener("change", cambiarCategoria);
     gamesList.addEventListener("click", addCarrito);
     cartCont.addEventListener("click", borrarJuego);
+    menuToggle.addEventListener("click", toggleMenu)
 }
 
 function renderCarrito() {
@@ -115,15 +116,20 @@ categories.forEach((category)=> {
 })
 }
 
+function toggleMenu() {
+  document.getElementById('blurry').classList.toggle("blurry");
+  document.getElementById('navbar__list').classList.toggle("navbar__list-visible");
+}
+
 init();
 
 function cambiarCategoria (){ 
  var games
  if (categoryList.value === "All") {
- games=gameArray
+ games = gameArray
  }
  else {
-  games=gameArray.filter((bicho)=>bicho.genero === categoryList.value);
+  games = gameArray.filter((bicho)=>bicho.genero === categoryList.value);
 }
 renderGames(games);
 }
