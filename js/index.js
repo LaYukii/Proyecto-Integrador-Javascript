@@ -5,6 +5,8 @@ const gamesList = document.querySelector(".games__list");
 const categoryList = document.querySelector("#category__list");
 const cartCont = document.querySelector(".cart_content");
 const menuToggle = document.querySelector("#menu-toggle-clickable");
+const sendButton = document.querySelector("#send__button");
+const contactForm = document.querySelector("#contact__form");
 var precio = 0;
 
 
@@ -16,7 +18,9 @@ function init() {
     categoryList.addEventListener("change", cambiarCategoria);
     gamesList.addEventListener("click", addCarrito);
     cartCont.addEventListener("click", borrarJuego);
-    menuToggle.addEventListener("click", toggleMenu)
+    menuToggle.addEventListener("click", toggleMenu);
+    contactForm.addEventListener("submit", enviarMensaje);
+    contactForm.addEventListener("click", editForm);
 }
 
 function renderCarrito() {
@@ -119,6 +123,16 @@ categories.forEach((category)=> {
 function toggleMenu() {
   document.getElementById('blurry').classList.toggle("blurry");
   document.getElementById('navbar__list').classList.toggle("navbar__list-visible");
+}
+
+function enviarMensaje(e) {
+  e.preventDefault();
+  contactForm.reset();
+  document.getElementById("message__sent").classList.remove("message__hidden");
+}
+
+function editForm(e) {
+  document.getElementById("message__sent").classList.add("message__hidden");
 }
 
 init();
