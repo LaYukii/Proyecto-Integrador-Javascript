@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css_mediaqueries/mediaqueries.css" />
+    <title>Integrador</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css_mediaqueries/mediaqueries.css" />
-  <title>Integrador</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-</head>
+  <body>
+    <header>
+      <img
+        src="./assets/navbar/Cute-Cat-Kawaii-Logo-52461700-1-removebg-preview (3).png"
+        alt="Cute cat logo"
+        class="logo"
+      />
 
-<body>
-  <header>
-    <img src="./assets/navbar/Cute-Cat-Kawaii-Logo-52461700-1-removebg-preview (3).png" alt="Cute cat logo"
-      class="logo" />
-
-    <nav class="navbar">
-      <label for="menu-toggle" id="menu-toggle-clickable" class="header__menu">
-        <img src="./assets/navbar/menu.png" alt="Menu" />
-      </label>
-      <input type="checkbox" id="menu-toggle" />
-      <ul class="navbar__list" id="navbar__list">
-        <li><a href="#hero" class="navbar__items">Home</a></li>
-        <li><a href="#about" class="navbar__items">About</a></li>
-        <li><a href="#catalog" class="navbar__items">Catalog</a></li>
-        <li><a href="#contact" class="navbar__items">Contact</a></li>
-        <!-- </ul>
+      <nav class="navbar">
+        <label
+          for="menu-toggle"
+          id="menu-toggle-clickable"
+          class="header__menu"
+        >
+          <img src="./assets/navbar/menu.png" alt="Menu" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="navbar__list" id="navbar__list">
+          <li><a href="#hero" class="navbar__items">Home</a></li>
+          <li><a href="#about" class="navbar__items">About</a></li>
+          <li><a href="#catalog" class="navbar__items">Catalog</a></li>
+          <li><a href="#contact" class="navbar__items">Contact</a></li>
+          <!-- </ul>
         <ul class="navbar__list" class="navbar__list"> -->
-        <li>
-          <a href="./login.html" class="navbar__items--colored">Log In</a>
-        </li>
-        <li>
-          <a href="./signup.html" class="navbar__items--colored">Sign Up</a>
-        </li>
-      </ul>
-      <!-- CART-TOGGLE -->
-      <label for="cart-toggle" class="navbar__cart-toggle">
-        <img src="./assets/navbar/shopping-cart-icon.png" alt="carrito de compras"
-          class="navbar__cart-toggle--cart-icon" />
-      </label>
-      <input type="checkbox" id="cart-toggle" />
-      <!-- CART -->
-      <div class="cart">
-        <h2>Shopping Cart</h2>
-        <!-- PRODUCTS -->
-         <div class="cart_content"></div>
-        <!-- <div class="cart__items">
+          <li>
+            <a href="./login.html" class="navbar__items--colored">Log In</a>
+          </li>
+          <li>
+            <a href="./signup.html" class="navbar__items--colored">Sign Up</a>
+          </li>
+        </ul>
+        <!-- CART-TOGGLE -->
+        <label for="cart-toggle" class="navbar__cart-toggle">
+          <img
+            src="./assets/navbar/shopping-cart-icon.png"
+            alt="carrito de compras"
+            class="navbar__cart-toggle--cart-icon"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <!-- CART -->
+        <div class="cart">
+          <h2>Shopping Cart</h2>
+          <!-- PRODUCTS -->
+          <div class="cart_content"></div>
+          <!-- <div class="cart__items">
           <img src="./assets/cart/cart-item01.jpg" alt="zodiacats cover page" />
 
           <div class="cart__info">
@@ -93,83 +116,86 @@
           </div>
         </div> -->
 
-        <span class="divider"></span>
-        <!-- TOTAL AND BUTTON  -->
+          <span class="divider"></span>
+          <!-- TOTAL AND BUTTON  -->
 
-        <div class="cart__total">
-          <p>Total:</p>
-          <span id="precio">$0</span>
-        </div>
-        <button class="cart__total--button">Buy</button>
-      </div>
-
-      <div id="blurry"></div>
-    </nav>
-  </header>
-  <main>
-    <!-- HERO -->
-    <section id="hero">
-      <div class="hero__info">
-        <h2>Games starring cats!</h2>
-        <p>
-          We all love cats, am I right?, and we all love games too, am I
-          right?, so what if we mix these two things together, cute cat games
-          of all genres and for everyone, let's check out these games about
-          cute cats doing cat things and some other non-cat things.
-        </p>
-        <a href="#catalog" class="hero__btn btn">Catalog</a>
-      </div>
-      <div class="hero__img">
-        <img src="./assets/hero/cat-gaming03.jpg" alt="gaming cat" />
-      </div>
-    </section>
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="about__info">
-        <h2>My Idea:</h2>
-        <p>
-          I am pleased to bring you a collection of unique indie games
-          starring cats. I believe in the fun, imagination and originality of
-          indie games, and that is why I am dedicated to bring you some games
-          with these ideas.
-        </p>
-        <h2>What I offer:</h2>
-        <ul class="about__info--list">
-          <li>
-            <span>A Unique Collection:</span> I've searched all corners of the
-            indie gaming world to find titles that stand out for their
-            creativity and love of cats.
-          </li>
-          <li>
-            <span>Diversity of Genres:</span> From adventure games to
-            platformers and puzzles, I bring games for all tastes. If you love
-            cats, we have something special for you!
-          </li>
-          <li>
-            <span>A Community Corner:</span> Not just a store, I share with
-            you the discord server where you have a community where cat and
-            video game lovers can connect, share stories and enjoy their
-            passion together.
-          </li>
-          <div class="about__img">
-            <a href=""><img src="./assets/about/discord-round-black-icon.png" alt="discord logo" /></a>
+          <div class="cart__total">
+            <p>Total:</p>
+            <span id="precio">$0</span>
           </div>
-        </ul>
-        <h2>My Commitment:</h2>
-        <p>
-          I am proud to support independent developers who create games with
-          love and dedication. Every game we offer has been selected based on
-          the quality and love for cats that is reflected in them.
-        </p>
-      </div>
-    </section>
-    <!-- CATALOG -->
-    <section id="catalog">
-      <h2>Catalog of my selected games</h2>
-      <select name="categories" id="category__list">
-      </select>
-      <div class="games__list">
-        <!-- <div class="catalog__games">
+          <button class="cart__total--button">Buy</button>
+        </div>
+
+        <div id="blurry"></div>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section id="hero">
+        <div class="hero__info">
+          <h2>Games starring cats!</h2>
+          <p>
+            We all love cats, am I right?, and we all love games too, am I
+            right?, so what if we mix these two things together, cute cat games
+            of all genres and for everyone, let's check out these games about
+            cute cats doing cat things and some other non-cat things.
+          </p>
+          <a href="#catalog" class="hero__btn btn">Catalog</a>
+        </div>
+        <div class="hero__img">
+          <img src="./assets/hero/cat-gaming03.jpg" alt="gaming cat" />
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="about__info">
+          <h2>My Idea:</h2>
+          <p>
+            I am pleased to bring you a collection of unique indie games
+            starring cats. I believe in the fun, imagination and originality of
+            indie games, and that is why I am dedicated to bring you some games
+            with these ideas.
+          </p>
+          <h2>What I offer:</h2>
+          <ul class="about__info--list">
+            <li>
+              <span>A Unique Collection:</span> I've searched all corners of the
+              indie gaming world to find titles that stand out for their
+              creativity and love of cats.
+            </li>
+            <li>
+              <span>Diversity of Genres:</span> From adventure games to
+              platformers and puzzles, I bring games for all tastes. If you love
+              cats, we have something special for you!
+            </li>
+            <li>
+              <span>A Community Corner:</span> Not just a store, I share with
+              you the discord server where you have a community where cat and
+              video game lovers can connect, share stories and enjoy their
+              passion together.
+            </li>
+            <div class="about__img">
+              <a href=""
+                ><img
+                  src="./assets/about/discord-round-black-icon.png"
+                  alt="discord logo"
+              /></a>
+            </div>
+          </ul>
+          <h2>My Commitment:</h2>
+          <p>
+            I am proud to support independent developers who create games with
+            love and dedication. Every game we offer has been selected based on
+            the quality and love for cats that is reflected in them.
+          </p>
+        </div>
+      </section>
+      <!-- CATALOG -->
+      <section id="catalog">
+        <h2>Catalog of my selected games</h2>
+        <select name="categories" id="category__list"></select>
+        <div class="games__list">
+          <!-- <div class="catalog__games">
           <div class="catalog__img">
             <img src="./assets/cards/card01.jpg" alt="Neko Odyssey cover page" />
           </div>
@@ -369,39 +395,35 @@
             </div>
           </div>
         </div> -->
-      </div>
-    </section>
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="contact__info">
-        <h2>Contact</h2>
-        <form class="contact__form" id="contact__form">
-          <label for="email">
-            Email:
-          </label>
-          <input
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="contact__info">
+          <h2>Contact</h2>
+          <form class="contact__form" id="contact__form" novalidate>
+            <label for="email"> Email: </label>
+            <input
               type="email"
               name="email"
               id="email"
               placeholder="email"
               class="input__contacto"
               required
-          />
-          <label for="name">
-            Name:
-          </label>
-          <input
+            />
+            <div class="error" id="error__email"></div>
+            <label for="name"> Name: </label>
+            <input
               type="text"
               name="name"
               id="name"
               placeholder="name"
               class="input__contacto"
               required
-          />
-          <label for="name">
-            Message:
-          </label>
-          <textarea
+            />
+            <div class="error" id="error__nombre"></div>
+            <label for="name"> Message: </label>
+            <textarea
               type="textarea"
               name="message"
               id="message"
@@ -409,18 +431,24 @@
               class="textarea__contacto"
               minlength="50"
               maxlength="1000"
-              required></textarea>
-              <button type="submit" id="send__button" class="send__button">Send! 😼</button>
-        </form>
-        <div id="message__sent" class="message__hidden">Thank you, your message has been sent meow 😸</div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <img src="./assets/footer/footer-img.gif" alt="" />
-    <p>Made by cat lover, Yukii Loza 😺</p>
-  </footer>
-</body>
+              required
+            ></textarea>
+            <div class="error" id="error__message"></div>
+            <button type="submit" id="send__button" class="send__button">
+              Send! 😼
+            </button>
+          </form>
+          <div id="message__sent" class="message__hidden">
+            Thank you, your message has been sent meow 😸
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="./assets/footer/footer-img.gif" alt="" />
+      <p>Made by cat lover, Yukii Loza 😺</p>
+    </footer>
+  </body>
 
-<script type="module" src="./js/index.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </html>

@@ -496,13 +496,20 @@ header {
   width: 100%;
   height: 50px;
   border-radius: 15px;
+  padding: 5px;
   font-family: var(--family-main);
+}
+
+.error {
+  color: red;
+  font-size: 80%;
 }
 
 .textarea__contacto {
   width: 100%;
   height: 150px;
   border-radius: 15px;
+  padding: 10px;
   font-family: var(--family-main);
 }
 
