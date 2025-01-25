@@ -211,9 +211,11 @@ header {
   padding: 20px 5px;
 }
 
-.cart__total--button {
+.cart__total--button,
+.cart__delete--button {
   background-color: rgb(247, 158, 173);
   border-radius: 80px;
+  margin: 5px;
   font-size: var(--font-petite);
   font-family: var(--family-main);
   /* max-width: 150px; */
@@ -361,6 +363,10 @@ header {
 #catalog {
   /* margin-top: 60px; */
   padding: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #catalog h2 {
@@ -373,6 +379,13 @@ header {
   /* margin-top: 60px; */
   /* border: 2px solid violet; */
   padding-bottom: 30px;
+}
+
+#category__list {
+  width: 30%;
+  height: 35px;
+  border-radius: 500px;
+  padding: 7px;
 }
 
 .catalog__games {
@@ -403,7 +416,7 @@ header {
   justify-content: flex-start;
   flex-direction: column;
   gap: 12px;
-  height: 215px;
+  height: 250px;
   font-family: var(--family-main);
 }
 
@@ -439,6 +452,14 @@ header {
   ); */
   padding: 0px 20px;
   cursor: pointer;
+}
+
+.catalog__added-to-cart {
+  margin: 5px 0px;
+  color: green;
+  font-size: 1.1rem;
+  text-align: end;
+  /* display: none; */
 }
 
 /*  ================== CONTACT ==================*/

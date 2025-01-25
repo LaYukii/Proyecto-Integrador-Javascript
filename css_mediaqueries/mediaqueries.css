@@ -71,7 +71,7 @@
     border-radius: 0 0 15px 15px;
     display: none;
   }
-  
+
   .navbar__list-visible {
     display: flex !important;
     z-index: 2 !important;
@@ -99,10 +99,23 @@
     /* border: 1px solid red; */
   }
 
+  /*  ================== HERO ==================*/
+  #hero {
+    border-radius: 100px;
+    max-width: 90%;
+  }
+
   /*  ================== CATALOG ==================*/
   #catalog {
     /* border: 1px solid red; */
     max-width: 600px;
+  }
+
+  #category__list {
+    width: 80%;
+    height: 35px;
+    border-radius: 500px;
+    padding: 7px;
   }
 
   .catalog__games {
@@ -194,6 +207,8 @@
     /* max-width: 400px; */
     display: flex;
     flex-direction: column;
+    border-radius: 50px;
+    padding: 20px 0px;
   }
 
   #hero h2 {
@@ -208,7 +223,8 @@
   }
 
   .hero__img {
-    display: none;
+    margin: 15px 0px;
+    max-width: 85%;
   }
 
   /*  ================== CATALOG ==================*/

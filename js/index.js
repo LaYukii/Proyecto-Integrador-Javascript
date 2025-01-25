@@ -12,6 +12,7 @@ const errorNombre = document.querySelector("#error__nombre");
 const errorMessage = document.querySelector("#error__message");
 const precioSpan = document.querySelector("#precio");
 const botonComprar = document.querySelector(".cart__total--button");
+const botonBorrar = document.querySelector(".cart__delete--button");
 var precio = 0;
 
 function init() {
@@ -26,6 +27,7 @@ function init() {
   contactForm.addEventListener("submit", enviarMensaje);
   // contactForm.addEventListener("click", editForm);
   botonComprar.addEventListener("click", comprarJogos);
+  botonBorrar.addEventListener("click", borrarJogos);
 }
 
 function renderCarrito() {
@@ -60,6 +62,26 @@ function comprarJogos() {
   }
 }
 
+function borrarJogos() {
+  if (cart.length !== 0) {
+    if (confirm("Are you sure you want to remove all games from the cart?")) {
+      cart.forEach((item) => {
+        const game = gameArray.find((x) => x.id == item);
+        document.getElementById("cartItem-" + item).remove();
+
+        precio -= game.precio;
+
+        precio = Math.round(precio * 100) / 100;
+      });
+
+      precioSpan.innerHTML = "$" + precio;
+
+      cart = [];
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+  }
+}
+
 function addCarrito(e) {
   if (e.target.classList.contains("catalog__price--btn")) {
     const cartItem = cart.find((x) => x == e.target.value);
@@ -69,6 +91,15 @@ function addCarrito(e) {
 
       const game = gameArray.find((x) => x.id == e.target.value);
       renderCart(game);
+
+      const mensaje = e.target
+        .closest(".catalog__info")
+        .querySelector(".catalog__added-to-cart");
+
+      mensaje.style.display = "";
+      setTimeout(() => {
+        mensaje.style.display = "none";
+      }, 2000);
     }
   }
 }
@@ -110,6 +141,9 @@ function renderGames(games) {
             <div class="catalog__price">
               <span>$${game.precio}</span>
               <button value=${game.id} class="catalog__price--btn">Buy</button>
+            </div>
+            <div class="catalog__added-to-cart" style="display: none">
+              Game added to cart :3 ✅
             </div>
           </div>
         </div>`;
