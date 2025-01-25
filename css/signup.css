@@ -80,6 +80,8 @@ header img {
 
 .signup__container {
   /* border: 2px solid rgb(33, 18, 238); */
+  font-size: var(--font-petite);
+  font-family: var(--family-main);
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -96,13 +98,16 @@ header img {
 
 .signup__info {
   /* border: 1px solid rgb(15, 228, 33); */
-  font-size: var(--font-petite);
-  font-family: var(--family-main);
   display: flex;
   flex-direction: column;
 
   gap: 30px;
   width: 500px;
+}
+
+.error {
+  color: red;
+  font-size: 80%;
 }
 
 .remember {
@@ -132,4 +137,17 @@ input[type="email"] {
   color: black;
   text-align: center;
   text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 80%;
+}
+
+#signed__up {
+  color: green;
+}
+
+.message__hidden {
+  display: none;
 }

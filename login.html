@@ -36,7 +36,7 @@
       <section id="login">
         <div class="login__container">
           <h2>Login to your account</h2>
-          <form class="login__info">
+          <form id="login__info" class="login__info">
             <label for="username">
               Enter your username:
               <input
@@ -44,8 +44,9 @@
                 name="username"
                 id="username"
                 placeholder="Username"
-                required
-            /></label>
+                required />
+              <div class="error" id="error__nombre"></div
+            ></label>
             <label for="password">
               Enter your password:
               <input
@@ -53,8 +54,9 @@
                 name="password"
                 id="password"
                 placeholder="Password"
-                required
-            /></label>
+                required />
+              <div class="error" id="error__password"></div
+            ></label>
             <label for="remember" class="remember">
               <input type="checkbox" name="remember" id="remember" />
               Keep the session logged in
@@ -64,9 +66,13 @@
               >I am not registered.</a
             >
           </form>
+          <div id="logged__in" class="message__hidden">
+            Logged in succesfully 😸
+          </div>
         </div>
       </section>
     </main>
     <footer></footer>
   </body>
+  <script type="module" src="./js/login.js"></script>
 </html>

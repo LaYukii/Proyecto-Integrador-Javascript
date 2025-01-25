@@ -71,12 +71,19 @@ header img {
   height: 90vh;
 }
 
+.error {
+  color: red;
+  font-size: 80%;
+}
+
 #login h2 {
   font-size: var(--font-title);
   font-family: var(--family-title);
 }
 
 .login__container {
+  font-size: var(--font-petite);
+  font-family: var(--family-main);
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -93,8 +100,6 @@ header img {
 }
 
 .login__info {
-  font-size: var(--font-petite);
-  font-family: var(--family-main);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,6 +125,14 @@ input[type="password"] {
   height: 50px;
   border-radius: 15px;
   font-family: var(--family-main);
+}
+
+#logged__in {
+  color: green;
+}
+
+.message__hidden {
+  display: none;
 }
 
 .login__signup {

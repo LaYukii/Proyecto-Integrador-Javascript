@@ -36,7 +36,7 @@
       <section id="signup">
         <div class="signup__container">
           <h2>Create an account</h2>
-          <form class="signup__info">
+          <form id="signup__info" class="signup__info">
             <label for="name">
               Name:
               <input
@@ -44,8 +44,9 @@
                 name="name"
                 id="name"
                 placeholder="Name"
-                required
-            /></label>
+                required />
+              <div class="error" id="error__nombre"></div
+            ></label>
             <label for="age"
               >Age:
               <input
@@ -53,8 +54,12 @@
                 name="age"
                 id="age"
                 placeholder="22"
-                required
-            /></label>
+                min="0"
+                onkeydown="return event.keyCode !== 69"
+                oninput="this.value = Math.abs(this.value)"
+                required />
+              <div class="error" id="error__edad"></div
+            ></label>
             <label for="username">
               Username:
               <input
@@ -62,9 +67,9 @@
                 name="username"
                 id="username"
                 placeholder="Username"
-                required
-              />
-            </label>
+                required />
+              <div class="error" id="error__username"></div
+            ></label>
             <label for="email">
               Email:
               <input
@@ -72,9 +77,9 @@
                 name="email"
                 id="email"
                 placeholder="Name@gmail.com"
-                required
-              />
-            </label>
+                required />
+              <div class="error" id="error__mail"></div
+            ></label>
             <label for="password">
               Password:
               <input
@@ -82,8 +87,19 @@
                 name="password"
                 id="password"
                 placeholder="Password"
-                required
-            /></label>
+                required />
+              <div class="error" id="error__password"></div
+            ></label>
+            <label for="repeat-password">
+              Repeat password:
+              <input
+                type="password"
+                name="repeat-password"
+                id="repeat-password"
+                placeholder="Password"
+                required />
+              <div class="error" id="error__repeat-password"></div
+            ></label>
             <label for="newslatter" class="newslatter">
               <input type="checkbox" name="newslatter" id="newslatter" />
               Subscribe to newslatter.
@@ -91,9 +107,13 @@
             <button class="signup__button">Create</button>
             <a class="signup__login" href="./login.html">I have an account</a>
           </form>
+          <div id="signed__up" class="message__hidden">
+            Signed up succesfully 😸
+          </div>
         </div>
       </section>
     </main>
     <footer></footer>
   </body>
+  <script type="module" src="./js/signup.js"></script>
 </html>
